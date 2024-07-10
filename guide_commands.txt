@@ -1,0 +1,7 @@
+# Para poder utilizar la herramienta lo primero es instalar los requisitos haciendo lo siguiente como root...
+
+$ ./requirements.sh
+
+# Una vez hecho lo anterior probaremos a ejecutarlo de la siguiente manera...
+
+$ crackerPass -h
