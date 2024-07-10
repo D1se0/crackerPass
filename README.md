@@ -1,5 +1,11 @@
 # crackerPass
 
+<p align="center">
+  <img src="https://github.com/D1se0/crackerPass/assets/164921056/4f50834c-82e8-4b68-b7ce-c1a854cee780" alt="Directorybrute" width="400">
+</p>
+
+----
+
 `crackerPass` es una herramienta de línea de comandos diseñada para crackear contraseñas utilizando diccionarios y verificar hashes de contraseñas en varios formatos. 
 La herramienta utiliza diferentes bibliotecas `Python` para manejar y verificar hashes de contraseñas, proporcionando flexibilidad para trabajar con diversos algoritmos de hash comunes.
 
