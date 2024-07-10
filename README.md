@@ -32,7 +32,7 @@ Verificar hashes de contraseñas utilizando diferentes algoritmos de hash.
 ### Clona este repositorio:
 
 ```bash
-git clone https://github.com/tu_usuario/crackerPass.git
+git clone https://github.com/D1se0/crackerPass.git
 cd crackerPass
 ```
 
@@ -47,11 +47,17 @@ Ejecuta el script `requirements.sh` como root para instalar las dependencias nec
 ### Parámetros:
 
 `-c`, `--hash`: Especifica el hash que se desea crackear.
+
 `-C`, `--hashfile`: Especifica un archivo que contiene hashes a crackear.
+
 `-w`, `--wordlist`: Especifica la ruta al archivo de diccionario.
+
 `-t`, `--hashtype`: Especifica el tipo de hash. Puede ser uno de los siguientes: md5, sha1, sha224, sha256, sha384, sha512, sha3_256, sha3_512, bcrypt, sha512crypt, sha256crypt, sha1crypt, md5crypt, argon2.
+
 `-o`, `--output`: Especifica el archivo de salida para guardar los resultados.
+
 `-i`, `--identify`: Identifica el tipo de hash proporcionado.
+
 `-I`, `--identifyfile`: Identifica los tipos de hash en un archivo.
 
 ## Ejemplos de uso:
