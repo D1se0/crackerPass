@@ -6,12 +6,12 @@
 
 ----
 
-`crackerPass` es una herramienta de línea de comandos diseñada para crackear contraseñas utilizando diccionarios y verificar hashes de contraseñas en varios formatos. 
-La herramienta utiliza diferentes bibliotecas `Python` para manejar y verificar hashes de contraseñas, proporcionando flexibilidad para trabajar con diversos algoritmos de hash comunes.
+`crackerPass` is a command line tool designed to crack passwords using dictionaries and verify password hashes in various formats. 
+The tool uses different `Python` libraries to handle and verify password hashes, providing flexibility to work with various common hashing algorithms.
 
-## Descripción
+## Description
 
-### `crackerPass` soporta los siguientes algoritmos de hash:
+### `crackerPass` supports the following hashing algorithms:
 
 `MD5`
 `SHA1`
@@ -28,80 +28,80 @@ La herramienta utiliza diferentes bibliotecas `Python` para manejar y verificar 
 `MD5Crypt`
 `Argon2`
 
-## La herramienta permite:
+## The tool allows:
 
-Crackear contraseñas utilizando un archivo de diccionario contra un `hash` específico.
-Verificar hashes de contraseñas utilizando diferentes algoritmos de hash.
+Crack passwords using a dictionary file against a specific `hash`.
+Verify password hashes using different hashing algorithms.
 
-## Instalación:
+## Facility:
 
-### Clona este repositorio:
+### Clone this repository:
 
 ```bash
 git clone https://github.com/D1se0/crackerPass.git
 cd crackerPass
 ```
 
-Ejecuta el script `requirements.sh` como root para instalar las dependencias necesarias y configurar la herramienta:
+Run the `requirements.sh` script as root to install the necessary dependencies and configure the tool:
 
 ```bash
 ./requirements.sh
 ```
 
-## Uso:
+## Use:
 
-### Parámetros:
+### Parameters:
 
-`-c`, `--hash`: Especifica el hash que se desea crackear.
+`-c`, `--hash`: Specifies the hash to crack.
 
-`-C`, `--hashfile`: Especifica un archivo que contiene hashes a crackear.
+`-C`, `--hashfile`: Specifies a file containing hashes to crack.
 
-`-w`, `--wordlist`: Especifica la ruta al archivo de diccionario.
+`-w`, `--wordlist`: Specifies the path to the dictionary file.
 
-`-t`, `--hashtype`: Especifica el tipo de hash. Puede ser uno de los siguientes: md5, sha1, sha224, sha256, sha384, sha512, sha3_256, sha3_512, bcrypt, sha512crypt, sha256crypt, sha1crypt, md5crypt, argon2.
+`-t`, `--hashtype`: Specifies the hash type. It can be one of the following: md5, sha1, sha224, sha256, sha384, sha512, sha3_256, sha3_512, bcrypt, sha512crypt, sha256crypt, sha1crypt, md5crypt, argon2.
 
-`-o`, `--output`: Especifica el archivo de salida para guardar los resultados.
+`-o`, `--output`: Specifies the output file to save the results.
 
-`-i`, `--identify`: Identifica el tipo de hash proporcionado.
+`-i`, `--identify`: Identifies the provided hash type.
 
-`-I`, `--identifyfile`: Identifica los tipos de hash en un archivo.
+`-I`, `--identifyfile`: Identifies the hash types in a file.
 
-## Ejemplos de uso:
+## Examples of use:
 
-`Crackear` un hash usando un diccionario:
+`Crack` a hash using a dictionary:
 
 ```bash
 python3 crackerPass.py -c <hash> -w <wordlist> -t <format_hash>
 ```
 
-Ejemplo:
+Example:
 
 ```bash
 python3 crackerPass.py -c f806fc5a2a0d5ba2471600758452799c -w /usr/share/wordlists/rockyou.txt -t md5
 ```
 
-Identificar un hash:
+Identify a hash:
 
 ```bash
 python3 crackerPass.py -i <hash>
 ```
 
-Crackear hashes desde un archivo:
+Crack hashes from a file:
 
 ```bash
 python3 crackerPass -C <hash_file> -w <wordlist> -t <format_hash>
 ```
 
-Ejemplo:
+Example:
 
 ```bash
 python3 crackerPass -C hashes.txt -w /usr/share/wordlists/rockyou.txt -t sha256
 ```
 
-## Contribuciones:
+## Contributions:
 
-Las contribuciones son bienvenidas. Si encuentras algún problema, por favor, abre un issue en el repositorio.
+Contributions are welcome. If you find any problems, please open an issue in the repository.
 
-## Licencia:
+## License:
 
-Este proyecto está licenciado bajo la Licencia `MIT`. Consulta el archivo `LICENSE` para más detalles.
+This project is licensed under the `MIT` License. See the `LICENSE` file for details.
