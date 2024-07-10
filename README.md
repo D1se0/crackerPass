@@ -33,7 +33,7 @@ The tool uses different `Python` libraries to handle and verify password hashes,
 Crack passwords using a dictionary file against a specific `hash`.
 Verify password hashes using different hashing algorithms.
 
-## Facility:
+## Install:
 
 ### Clone this repository:
 
